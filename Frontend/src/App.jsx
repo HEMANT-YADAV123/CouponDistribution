@@ -92,7 +92,7 @@ export default function App() {
         <button
           onClick={claimCoupon}
           disabled={loading || cooldown > 0}
-          className={`w-full bg-gradient-to-r from-amber-500 to-amber-600 px-6 py-3 text-lg font-semibold text-white rounded-lg transition-all ${
+          className={`w-full bg-gradient-to-r from-amber-500 to-amber-600 px-6 cursor-pointer py-3 text-lg font-semibold text-white rounded-lg transition-all ${
             loading || cooldown > 0
               ? "bg-gray-500 cursor-not-allowed"
               : "bg-blue-500 hover:bg-blue-600"
