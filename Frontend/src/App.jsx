@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { Ticket, Clock, CheckCircle, XCircle } from "lucide-react";
 
-
 export default function App() {
   // Load cooldown from localStorage (if available)
   const [cooldown, setCooldown] = useState(() => {
@@ -79,11 +78,14 @@ export default function App() {
   }, [cooldown]);
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-blue-700 gap-8">
-      <h1 className="text-3xl font-extrabold text-white capitalize"> Round-Robin Coupon Distribution with Abuse Prevention </h1>
-      {/* Card Container */}
-      <div className="bg-white shadow-lg rounded-lg p-8 max-w-md w-full text-center">
-        <h1 className="text-2xl font-bold text-blue-600 mb-4 flex items-center justify-center gap-2">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-blue-700 px-4 sm:px-6 lg:px-8">
+      <h1 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-white text-center mb-6">
+        Round-Robin Coupon Distribution with Abuse Prevention
+      </h1>
+
+      {/* Responsive Card */}
+      <div className="bg-white shadow-lg rounded-lg p-6 sm:p-8 max-w-sm sm:max-w-md lg:max-w-lg w-full text-center">
+        <h1 className="text-xl sm:text-2xl font-bold text-blue-600 mb-4 flex items-center justify-center gap-2">
           <Ticket className="w-6 h-6 text-blue-500" /> Claim Your Coupon
         </h1>
 
