@@ -22,7 +22,7 @@ export default function App() {
 
     try {
       const response = await axios.get(
-        "http://localhost:4000/api/claim-coupon",
+        "https://coupondistribution-backend.onrender.com/api/claim-coupon",
         { withCredentials: true }
       );
 
