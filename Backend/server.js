@@ -12,7 +12,11 @@ connectToDb();
 const app = express();
 
 app.use(cors({
-    origin: "http://localhost:5174", // Allow only the frontend origin
+    origin: [
+        "http://localhost:5174", 
+        "https://coupondistribution-frontend.onrender.com",
+        "http://localhost:5174"
+      ], // Allow only the frontend origin
     credentials: true // Allow cookies & authentication headers
 }));
 app.use(cookieParser());
