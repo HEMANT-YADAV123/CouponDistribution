@@ -15,7 +15,7 @@ app.use(cors({
     origin: [
         "http://localhost:5174", 
         "https://coupondistribution-frontend.onrender.com",
-        "http://localhost:5174"
+        "http://localhost:5173"
       ], // Allow only the frontend origin
     credentials: true // Allow cookies & authentication headers
 }));
